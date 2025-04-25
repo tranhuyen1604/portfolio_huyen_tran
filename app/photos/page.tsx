@@ -7,67 +7,60 @@ export const metadata: Metadata = {
   description: "My Photos",
 };
 
+const photos1 = [
+  {
+    src: "/photos/photo7.jpg",
+    alt: "Home is sweet home",
+  },
+  {
+    src: "/photos/photo8.jpg",
+    alt: "Sapa",
+  },
+  {
+    src: "/photos/photo9.jpg",
+    alt: "Pretty day",
+  },
+  {
+    src: "/photos/photo10.jpg",
+    alt: "HaLong Bay",
+  },
+  {
+    src: "/photos/photo11.jpg",
+    alt: "Home is sweet home",
+  },
+  {
+    src: "/photos/photo12.jpg",
+    alt: "Cat Ba",
+  },
+];
+
+const photos2 = [
+  { src: "/photos/photo13.jpg", alt: "Da lat" },
+  { src: "/photos/photo14.jpg", alt: "Home is sweet home" },
+  { src: "/photos/photo15.jpg", alt: "Ha Long Bay" },
+  { src: "/photos/photo16.jpg", alt: "A uptight day" },
+];
+
+const photos3 = [
+  { src: "/photos/photo18.jpg", alt: "Big Ben" },
+  { src: "/photos/photo19.jpg", alt: "Phan rang" },
+  { src: "/photos/photo20.jpg", alt: "Phan rang" },
+  { src: "/photos/photo21.jpg", alt: "Phan Thiet" },
+  { src: "/photos/photo22.jpg", alt: "Phan Thiet" },
+  { src: "/photos/photo23.jpg", alt: "Phan Thiet" },
+  { src: "/photos/photo24.jpg", alt: "Phan rang" },
+  { src: "/photos/photo25.jpg", alt: "Bali" },
+];
+
 export default function Photos() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-medium">Photos</h1>
-      <ImageGrid
-        columns={3}
-        images={[
-          {
-            src: "/photos/photo1.jpg",
-            alt: "Roman columns",
-            href: "https://unsplash.com/photos/people-walking-near-building-during-daytime-dFLBDQQeffU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
-          },
-          {
-            src: "/photos/photo2.jpg",
-            alt: "Big Ben",
-            href: "https://unsplash.com/photos/big-ben-london-MdJq0zFUwrw?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
-          },
-          {
-            src: "/photos/photo3.jpg",
-            alt: "Sacré-Cœur Basilica",
-            href: "https://unsplash.com/photos/a-view-of-the-inside-of-a-building-through-a-circular-window-Tp-3hrx88J4",
-          },
-          {
-            src: "/photos/photo4.jpg",
-            alt: "Eiffel Tower",
-            href: "https://unsplash.com/photos/the-eiffel-tower-towering-over-the-city-of-paris-OgPuPvPsHLM?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
-          },
-          {
-            src: "/photos/photo5.jpg",
-            alt: "Taj Mahal",
-            href: "https://unsplash.com/photos/taj-mahal-india-IPlPkWPJ2fo",
-          },
-          {
-            src: "/photos/photo6.jpg",
-            alt: "Colosseum",
-            href: "https://unsplash.com/photos/brown-concrete-building-under-blue-sky-during-daytime-3cyBR1rIJmA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
-          },
-        ]}
-      />
+      <ImageGrid columns={3} images={photos1} />
 
-      <ImageGrid
-        columns={2}
-        images={[
-          { src: "/photos/photo1.jpg", alt: "Roman columns" },
-          { src: "/photos/photo2.jpg", alt: "Big Ben" },
-          { src: "/photos/photo3.jpg", alt: "Sacré-Cœur Basilica" },
-          { src: "/photos/photo4.jpg", alt: "Eiffel Tower" },
-        ]}
-      />
+      <ImageGrid columns={2} images={photos2} />
 
-      <ImageGrid
-        columns={4}
-        images={[
-          { src: "/photos/photo1.jpg", alt: "Roman columns" },
-          { src: "/photos/photo2.jpg", alt: "Big Ben" },
-          { src: "/photos/photo3.jpg", alt: "Sacré-Cœur Basilica" },
-          { src: "/photos/photo4.jpg", alt: "Eiffel Tower" },
-          { src: "/photos/photo5.jpg", alt: "Taj Mahal" },
-          { src: "/photos/photo6.jpg", alt: "Colosseum" },
-        ]}
-      />
+      <ImageGrid columns={4} images={photos3} />
     </section>
   );
 }
